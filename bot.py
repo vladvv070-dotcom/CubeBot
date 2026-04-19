@@ -71,7 +71,7 @@ async def check_subscription_with_claude(image_bytes: bytes) -> tuple[bool, str]
     image_b64 = base64.standard_b64encode(image_bytes).decode("utf-8")
 
     payload = {
-        "model": "claude-opus-4-5",
+        "model": "claude-sonnet-4-5",
         "max_tokens": 256,
         "messages": [
             {
